@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-05-04T14:54:17.818026",
+  "dataset": "lib/accident_prediction/dataset/generated/part2_training_windows_v3_unified.csv",
+  "dataset_size": 8536,
+  "train_size": 6828,
+  "test_size": 1708,
+  "num_features": 16,
+  "num_classes": 4,
+  "class_names": [
+    "crash_like",
+    "high_risk",
+    "safe",
+    "warning"
+  ],
+  "models": [
+    {
+      "model": "Random Forest",
+      "accuracy": 1.0,
+      "f1_score": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "feature_importance": [
+        {
+          "feature": "speed_mps",
+          "importance": 0.2491242915640595
+        },
+        {
+          "feature": "ax_std",
+          "importance": 0.11382995856077334
+        },
+        {
+          "feature": "ay_mean",
+          "importance": 0.11196137529151885
+        },
+        {
+          "feature": "ax_mean",
+          "importance": 0.09606551124149867
+        },
+        {
+          "feature": "ay_std",
+          "importance": 0.08413261270277789
+        },
+        {
+          "feature": "gz_mean",
+          "importance": 0.07143103739493216
+        },
+        {
+          "feature": "gyro_magnitude_mean",
+          "importance": 0.059872712203849494
+        },
+        {
+          "feature": "az_std",
+          "importance": 0.04728198784445098
+        },
+        {
+          "feature": "accel_magnitude_mean",
+          "importance": 0.040533638842870354
+        },
+        {
+          "feature": "gy_mean",
+          "importance": 0.039634636100378866
+        }
+      ]
+    }
+  ],
+  "best_model": "Random Forest",
+  "best_f1_score": 1.0
+}

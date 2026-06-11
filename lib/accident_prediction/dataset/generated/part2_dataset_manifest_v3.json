@@ -1,0 +1,79 @@
+{
+  "timestamp": "2026-05-04T14:49:57.966335",
+  "version": "v3_unified_training",
+  "dataset_file": "lib/accident_prediction/dataset/generated/part2_training_windows_v3_unified.csv",
+  "total_samples": 8536,
+  "sources": {
+    "synthetic": {
+      "count": 536,
+      "percentage": 6.3,
+      "origin": "User GPS routes + synthetic IMU generation (seed: 20260504)"
+    },
+    "external": {
+      "count": 8000,
+      "percentage": 93.7,
+      "origin": "Paper [33] Raza et al. - Smartphone IMU Dataset"
+    }
+  },
+  "label_distribution": {
+    "safe": 3252,
+    "warning": 2767,
+    "high_risk": 2472,
+    "crash_like": 45
+  },
+  "features": [
+    "ax_mean",
+    "ax_std",
+    "ay_mean",
+    "ay_std",
+    "az_mean",
+    "az_std",
+    "gx_mean",
+    "gx_std",
+    "gy_mean",
+    "gy_std",
+    "gz_mean",
+    "gz_std",
+    "accel_magnitude_mean",
+    "gyro_magnitude_mean",
+    "jerk_mean",
+    "speed_mps",
+    "label",
+    "source",
+    "timestamp_utc"
+  ],
+  "quality_validation": {
+    "no_missing_values": 0,
+    "all_columns_numeric": true,
+    "timestamp_column_valid": true
+  },
+  "research_backing": {
+    "paper_33": {
+      "title": "Detection of Driver Behavior Using Smartphone Motion Sensor Data: An Ensemble Feature Engineering Approach",
+      "authors": "Raza et al.",
+      "publication": "IEEE Access 2023",
+      "dataset_size": 6728,
+      "classes": [
+        "Slow (37.6%)",
+        "Normal (32.6%)",
+        "Aggressive (28.6%)"
+      ],
+      "device": "Samsung Galaxy S21",
+      "sampling_rate_hz": 50,
+      "sensors": [
+        "Accelerometer (X,Y,Z)",
+        "Gyroscope (X,Y,Z)"
+      ],
+      "best_method": "Ensemble LR-RFC achieving 99% accuracy"
+    }
+  },
+  "ready_for_training": true,
+  "training_recommendations": [
+    "Use stratified K-fold cross-validation (k=5)",
+    "Consider class weighting due to imbalance",
+    "Baseline: Random Forest (sklearn)",
+    "Advanced: 1D CNN (TensorFlow/Keras)",
+    "Target: >85% F1-score on test set",
+    "Evaluation: Use F1, Recall, Precision (not just accuracy)"
+  ]
+}

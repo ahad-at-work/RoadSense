@@ -1,0 +1,101 @@
+{
+  "generated_at_utc": "2026-05-04T13:45:58.758Z",
+  "route_csv": "C:\\fyp\\version-u\\fyp_app\\lib\\accident_prediction\\dataset\\Trip Logger for Coordinates - trip_points.csv",
+  "external_dir": "C:\\fyp\\version-u\\fyp_app\\lib\\accident_prediction\\dataset\\external",
+  "seed": 20260504,
+  "window_seconds": 2.0,
+  "sampling_hz": 30,
+  "sequence_length": 60,
+  "input_trip_count": 10,
+  "synthetic_row_count": 536,
+  "external_row_count": 0,
+  "merged_row_count": 536,
+  "skipped_route_trips": [
+    "trip_2026-04-28T06-03-11.619930Z",
+    "trip_2026-04-30T06-07-24.792020Z",
+    "trip_2026-04-30T10-15-21.175259Z",
+    "trip_2026-05-03T14-29-11.775046Z"
+  ],
+  "skipped_external_files": [],
+  "route_type_counts": {
+    "city": 108,
+    "highway": 180,
+    "rough_road": 180,
+    "narrow_street": 68
+  },
+  "label_counts": {
+    "high_risk": 88,
+    "safe": 244,
+    "warning": 159,
+    "crash_like": 45
+  },
+  "source_counts": {
+    "route_simulation_v1": 536
+  },
+  "quality": {
+    "row_count": 536,
+    "label_counts": {
+      "high_risk": 88,
+      "safe": 244,
+      "warning": 159,
+      "crash_like": 45
+    },
+    "source_counts": {
+      "route_simulation_v1": 536
+    },
+    "route_counts": {
+      "city": 108,
+      "highway": 180,
+      "rough_road": 180,
+      "narrow_street": 68
+    },
+    "label_source_counts": {
+      "synthetic_route_simulation": 536
+    },
+    "missing_required": {
+      "window_id": 0,
+      "trip_id": 0,
+      "source_dataset": 0,
+      "label_source": 0,
+      "route_type": 0,
+      "label": 0,
+      "window_index": 0,
+      "window_seconds": 0,
+      "sampling_hz": 0,
+      "start_time_utc": 0,
+      "end_time_utc": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "speed_mps": 0,
+      "bearing_deg": 0,
+      "accuracy_m": 0,
+      "altitude_m": 0,
+      "trip_samples": 0,
+      "trip_distance_m": 0,
+      "trip_duration_s": 0,
+      "ax_mean": 0,
+      "ay_mean": 0,
+      "az_mean": 0,
+      "ax_std": 0,
+      "ay_std": 0,
+      "az_std": 0,
+      "gx_mean": 0,
+      "gy_mean": 0,
+      "gz_mean": 0,
+      "gx_std": 0,
+      "gy_std": 0,
+      "gz_std": 0,
+      "acc_magnitude_mean": 0,
+      "acc_magnitude_max": 0,
+      "gyro_magnitude_mean": 0,
+      "gyro_magnitude_max": 0,
+      "jerk_mean": 0,
+      "dominant_frequency": 0,
+      "spectral_energy": 0,
+      "spectral_entropy": 0,
+      "event_density": 0,
+      "risk_score": 0,
+      "sequence_json": 0
+    }
+  }
+}
