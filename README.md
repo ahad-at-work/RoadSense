@@ -142,7 +142,7 @@ Full list in `pubspec.yaml`.
 | Developer | Abdul Ahad |
 | Developer | Umer Bin Ibrar |
 | Supervisor | Arsalan-ul-Haq |
-| Supervisor | Engr. Laila Baloch |
+| Co-Supervisor | Engr. Laila Baloch |
 
 **Institution:** BUITEMS — Balochistan University of Information Technology, Engineering and Management Sciences, Quetta, Pakistan.
 
